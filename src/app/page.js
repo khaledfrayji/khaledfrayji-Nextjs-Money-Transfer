@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer';
 import styles from './page.module.css';
-import { FaSearch } from 'react-icons/fa'; 
+
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
             placeholder="Where do you want to send money?"
             className={styles.searchInput}
           />
-          <FaSearch className={styles.searchIcon} />
+      
         </div>
         <div className={styles.regularUsers}>
           <div className={styles.userIcons}>
