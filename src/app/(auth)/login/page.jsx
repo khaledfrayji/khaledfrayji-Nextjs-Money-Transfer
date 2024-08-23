@@ -71,7 +71,7 @@ export default function Login() {
         {error && <p className={styles.error}>{error}</p>}
         <button type="submit">Login</button>
         <p className={styles.newAccount}>
-          Don't have an account? <a href="/signup">Sign Up</a>
+          Don&apos;t have an account? <a href="/signup">Sign Up</a>
         </p>
       </form>
     </div>

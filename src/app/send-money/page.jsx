@@ -44,7 +44,7 @@ export default function SendMoney() {
         <h2>How to Send Money</h2>
         <p>
           Sending money is quick and easy with Global. Simply enter the
-          recipient's Card ID, specify the amount, and hit send. Your money
+          recipient&apos;s Card ID, specify the amount, and hit send. Your money
           will be transferred securely and instantly.
         </p>
         <p>
