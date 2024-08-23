@@ -1,0 +1,88 @@
+/* pages/auth.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px;
+}
+.newAccount{
+ padding-top: 15px;
+}
+.form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFA726;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background-color: #F57C00;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.signupText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signupText a {
+  color: #FFA726;
+  text-decoration: none;
+}
+
+.signupText a:hover {
+  text-decoration: underline;
+}
+.message{
+  color: red;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 50px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form {
+    padding: 15px;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+}

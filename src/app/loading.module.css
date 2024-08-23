@@ -1,0 +1,95 @@
+/* components/skeletonLoader.module.css */
+.skeletonContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 200px;
+  }
+  
+  .skeletonTitle {
+    height: 40px;
+    width: 60%;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .skeletonSubtitle {
+    height: 20px;
+    width: 80%;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .skeletonButton {
+    height: 40px;
+    width: 150px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .skeletonSearch {
+    height: 40px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .skeletonUserIcons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .skeletonUserIcon {
+    height: 40px;
+    width: 40px;
+    background: #e0e0e0;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .skeletonTitle {
+      width: 80%;
+    }
+  
+    .skeletonSubtitle {
+      width: 100%;
+    }
+  
+    .skeletonButton {
+      width: 100%;
+      height: 50px;
+    }
+  
+    .skeletonUserIcons {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skeletonTitle {
+      width: 100%;
+    }
+  
+    .skeletonSubtitle {
+      width: 100%;
+    }
+  
+    .skeletonButton {
+      width: 100%;
+      height: 50px;
+    }
+  
+    .skeletonUserIcons {
+      flex-direction: column;
+    }
+  
+    .skeletonUserIcon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  

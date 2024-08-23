@@ -1,95 +1,50 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Footer from '../../components/Footer';
+import styles from './page.module.css';
+import { FaSearch } from 'react-icons/fa'; 
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+    <>
+     
+      <div className={styles.container}>
+      <div className={styles.left}>
+        <h1 className={styles.title}>
+          Send Money or <span className={styles.highlight}>Receive Payments</span> Globally
+        </h1>
+        <p className={styles.subtitle}>
+          Experience fast, secure, and reliable international money transfers at the best rates. Trusted by millions worldwide.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <a href="/get-started" className={styles.getStartedBtn}>
+          Get Started
+        </a>
+        <div className={styles.searchBox}>
+          <input
+            type="text"
+            placeholder="Where do you want to send money?"
+            className={styles.searchInput}
+          />
+          <FaSearch className={styles.searchIcon} />
+        </div>
+        <div className={styles.regularUsers}>
+          <div className={styles.userIcons}>
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" className={styles.userIcon} />
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2" className={styles.userIcon} />
+            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="User 3" className={styles.userIcon} />
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 4" className={styles.userIcon} />
+        
+          </div>
+          <p className={styles.userCount}>
+            45k+ Regular Users. <a href="/view-price-plan" className={styles.highlight}>View Price Plan</a>
+          </p>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.right}>
+        <img src="/money-transfer.png" alt="Money Transfer" /> 
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      
+    </div>
+    <Footer/>
+    </>
+   
   );
 }

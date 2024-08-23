@@ -1,0 +1,123 @@
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+
+.cardContainer {
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 360px;
+  height: 220px;
+  background: linear-gradient(to right,#4CAF50,#80f083);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: rotateY(10deg);
+}
+
+.cardBackgroundText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  z-index: 1;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.cardAmount {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+
+.eyeIcon img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.cardDetails {
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.cardholderName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cardId {
+  font-size: 14px;
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.sendButton,
+.receiveButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sendButton {
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+}
+
+.receiveButton {
+  background: #2196F3;
+  color: white;
+}
+
+.sendButton:hover,
+.receiveButton:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 280px;
+    height: 180px;
+  }
+  
+  .sendButton,
+  .receiveButton {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

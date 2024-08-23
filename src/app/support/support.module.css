@@ -1,0 +1,161 @@
+/* General Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  padding-top: 100px;
+  color: #333;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color:  #187e04;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contactSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.contactSection h2 {
+  font-size: 1.8rem;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.contactSection p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contactSection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactSection li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contactSection a {
+  color:#ff6600;
+  text-decoration: none;
+}
+
+.contactSection a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ Section */
+.faqSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faqSection h2 {
+  font-size: 1.8rem;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.faqItem {
+  margin-bottom: 15px;
+}
+
+.faqQuestion {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.faqQuestion:hover {
+  background-color: #ff6600;
+}
+
+.faqAnswer {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f0f4ff;
+  border-left: 4px solid #ff6600;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+  }
+
+  .contactSection h2,
+  .faqSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .faqQuestion {
+    font-size: 1rem;
+  }
+
+  .faqAnswer {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .contactSection li {
+    font-size: 0.9rem;
+  }
+
+  .faqQuestion {
+    font-size: 0.9rem;
+  }
+
+  .faqAnswer {
+    font-size: 0.85rem;
+  }
+}
